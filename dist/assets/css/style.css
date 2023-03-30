@@ -1,8 +1,11 @@
 :root {
+    --branco-azul: #A1C7E0;
     --laranja: #FF9933;
     --azul-claro: #0099DD;
+    --azul-neutro: #00ABBD;
+    --azul--escuro-verde: #026E81;
 
-    --fonte-principal: font-family: 'Ubuntu', sans-serif;
+    --fonte-principal: 'Ubuntu', sans-serif;
 }
 
 .corpo {
@@ -11,10 +14,15 @@
     background-repeat: no-repeat;
     background-size: cover;
     font-family: var(--fonte-principal);
+    height: 100vh;
 }
 
 @media screen and (max-width: 900px) {
     .corpo {
         background-image: url('../img/back-vertical.svg');
     }
+}
+
+.escondido {
+    display: none;
 }

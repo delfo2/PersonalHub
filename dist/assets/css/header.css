@@ -1,0 +1,25 @@
+.cabecalho {
+    display: flex;
+    justify-content: space-around;
+    margin: 3rem;
+}
+
+.cabecalho__botao-voltar, .cabecalho__botao-github {
+    border: none;
+    background-color: none;
+    background: none;
+    background-image: url(../img/return.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+}
+
+.cabecalho__botao-github {
+    background-image: url(../img/github.png);
+}
+
+.cabecalho__titulo {
+    font-size: 1.5rem;
+}

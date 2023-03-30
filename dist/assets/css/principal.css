@@ -1,0 +1,81 @@
+.principal {
+    height: 60vh;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.principal__cartao {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cartao__profile {
+    border-radius: 20px;
+    width: 40%;
+}
+
+.cartao__nome {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.cartao__apelido, .cartao__localizacao {
+    font-weight: 100;
+}
+
+.cartao__localizacao {
+    font-size: .7rem;
+    margin: 1% 0 1% 5px;
+    position: relative;
+}
+
+.cartao__localizacao::before {
+    content: '';
+    background-image: url('../img/local.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: -15px;
+    height: 10px;
+    width: 10px;
+}
+
+/*                  FOLLOWERS & FOLLOWING            */
+
+.principal__numbers {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.numbers__following, .numbers__followers {
+    font-weight: 100;
+    margin: 0 5px;
+}
+
+/*                        INFO                            */
+
+.principal__info {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.info__site, .info__twitter {
+    color: var(--laranja);
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+
+
+
+/*          RESPONSIVO           */
+
+@media screen and (min-width: 800px) {
+    .cartao__profile {
+        width: 30%
+    }
+}
