@@ -1,0 +1,20 @@
+:root {
+    --laranja: #FF9933;
+    --azul-claro: #0099DD;
+
+    --fonte-principal: font-family: 'Ubuntu', sans-serif;
+}
+
+.corpo {
+    background-image: url(../img/back.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: var(--fonte-principal);
+}
+
+@media screen and (max-width: 900px) {
+    .corpo {
+        background-image: url('../img/back-vertical.svg');
+    }
+}
