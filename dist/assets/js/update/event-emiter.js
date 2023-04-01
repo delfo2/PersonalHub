@@ -2,8 +2,7 @@ const topics = new Map();
 export const EventEmitter = {
     sub(who, topic) {
         var _a;
-        if (!topics.has(topic) &&
-            topics.get(topic)) {
+        if (!topics.has(topic)) {
             topics.set(topic, []);
         }
         (_a = topics.get(topic)) === null || _a === void 0 ? void 0 : _a.push(who);
