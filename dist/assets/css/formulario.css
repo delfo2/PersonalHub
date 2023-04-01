@@ -23,6 +23,7 @@
     display: flex;
     justify-content: center;
     position: relative;
+    margin-top: 2rem;
     width: 100%;
 }
 
@@ -63,4 +64,56 @@
     transform: translateX(-90px);
 }
 
+.formulario__aria button {
+    background-color: var(--laranja);
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px;
+    transition: color 300ms;
+}
 
+.formulario__aria button:focus,
+.formulario__aria button:hover,
+.formulario__aria button:active {
+    background-color: var(--laranja-escuro);
+}
+
+@media screen and (max-width: 700px) {
+    
+    .formulario__titulo {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    
+    .formulario__titulo {
+        font-size: 1.5rem;
+    }
+    .formulario__aria label{
+        font-size: 1rem;
+        left: 20%;
+        top: 30px;
+    }
+    .formulario__aria input:focus ~ label,
+    .formulario__aria input:valid ~ label  {
+        transform: translateX(-60px);
+    }
+    .formulario__aria {
+        flex-wrap: wrap;
+    }
+    .formulario__aria input {
+        margin: 2rem;
+        transition: 300ms ease-in-out;
+        width: 60%;
+    }
+    .formulario__aria input:focus,
+    .formulario__aria input:valid {
+        width: 65%;
+    }
+
+    .formulario__aria button {
+        margin: 0 4rem;
+    }
+
+}

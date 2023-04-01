@@ -52,7 +52,23 @@
 
 .numbers__following, .numbers__followers {
     font-weight: 100;
-    margin: 0 5px;
+    margin: 0 15px;
+    position: relative;
+}
+.numbers__following::before,
+.numbers__followers::before {
+    content: '';
+    background-image: url(../img/user.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    right: -12px;
+    height: 10px;
+    position: absolute;
+    width: 10px;
+    top: 4px;
+}
+.numbers__followers::before {
+    background-image: url(../img/group.png);
 }
 
 /*                        INFO                            */
@@ -64,9 +80,27 @@
 }
 
 .info__site, .info__twitter {
-    color: var(--laranja);
-    text-decoration: none;
-    margin: 0 5px;
+    color: black;
+    margin: 0 15px;
+    position: relative;
+    text-decoration: underline;
+}
+
+.info__site::before,
+.info__twitter::before {
+    background-image: url(../img/twitter.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: '';
+    left: -15px;
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    top: 5px;
+}
+.info__site::before {
+    background-image: url(../img/link.svg);
+    width: 13px;
 }
 
 
