@@ -10,33 +10,35 @@ export function applyApiAtHtml(api) {
             </nav>
         </header>
         <main class="principal">
-            <article class="principal__cartao">
-                <img class="cartao__profile${nullChecker(api.avatar_url)}" src="${api.avatar_url}" alt="Foto de Perfil do usuário">
-                <h2 class="cartao__nome${nullChecker(api.name)}">${api.name}</h2>
-                <h3 class="cartao__apelido${nullChecker(api.login)}">${api.login}</h3>
-                <p class="cartao__localizacao${nullChecker(api.location)}">${api.location}</p>
-            </article>
+            ${api.html_url ? `
+                    <article class="principal__cartao">
+                        <img class="cartao__profile${nullChecker(api.avatar_url)}" src="${api.avatar_url}" alt="Foto de Perfil do usuário">
+                        <h2 class="cartao__nome${nullChecker(api.name)}">${api.name}</h2>
+                        <h3 class="cartao__apelido${nullChecker(api.login)}">${api.login}</h3>
+                        <p class="cartao__localizacao${nullChecker(api.location)}">${api.location}</p>
+                    </article>
+                    
+                    <div class="principal__numbers">
+                        <p class="numbers__following">${api.following} seguindo</p>
+                        <p class="numbers__followers">${api.followers} seguidores</p>
+                    </div>
+                    
+                    <div class="principal__info">
+                        <p class="info__bio${nullChecker(api.bio)}">${api.bio}</p>
+                        <p class="info__repos">${api.public_repos} Repositórios</p>
+                        <p class="info__data${nullChecker(api.created_at)}">Criado em: ${formatDate(api.created_at)}</p>
+                        <div>
+                            <a class="info__site${nullChecker(api.blog)}" href="${api.blog}">Site</a>
+                            <a class="info__twitter${nullChecker(api.twitter_username)}" href="${'https://twitter.com/' + api.twitter_username}">Twitter</a>
+                        </div>
+                    </div>
+                ` : `<h2 class="cartao__nome centralizar">Esse usuário não existe!</h2>`}
+        </main>
             
-            <div class="principal__numbers">
-                <p class="numbers__following">${api.following} seguindo</p>
-                <p class="numbers__followers">${api.followers} seguidores</p>
-            </div>
-            
-            <div class="principal__info">
-                <p class="info__bio${nullChecker(api.bio)}">${api.bio}</p>
-                <p class="info__repos">${api.public_repos} Repositórios</p>
-                <p class="info__data${nullChecker(api.created_at)}">Criado em: ${formatDate(api.created_at)}</p>
-                <div>
-                    <a class="info__site${nullChecker(api.blog)}" href="${api.blog}">Site</a>
-                    <a class="info__twitter${nullChecker(api.twitter_username)}" href="${'https://twitter.com/' + api.twitter_username}">Twitter</a>
-                </div>
-            </div>
-            </main>
-            
-            <footer class="rodape">
-                <p class="rodape__paragrafo">Created By: <a href="https://github.com/delfo2">Delfo</a></p>
-                <p class="rodape__ano">2023</p>
-            </footer>
+        <footer class="rodape">
+            <p class="rodape__paragrafo">Created By: <a href="https://github.com/delfo2">Delfo</a></p>
+            <p class="rodape__ano">2023</p>
+        </footer>
     `;
 }
 export const formIndex = `

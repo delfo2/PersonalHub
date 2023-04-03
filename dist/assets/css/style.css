@@ -27,3 +27,8 @@
 .escondido {
     display: none;
 }
+
+.centralizar {
+    text-align: center;
+    margin-top: 5rem;
+}
