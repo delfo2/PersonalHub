@@ -19,8 +19,8 @@ export function applyApiAtHtml(api) {
                     </article>
                     
                     <div class="principal__numbers">
-                        <p class="numbers__following">${api.following} seguindo</p>
-                        <p class="numbers__followers">${api.followers} seguidores</p>
+                        <p class="numbers__following">${api.following}</p>
+                        <p class="numbers__followers">${api.followers}</p>
                     </div>
                     
                     <div class="principal__info">
