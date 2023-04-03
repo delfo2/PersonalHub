@@ -7,6 +7,6 @@ export function listenToForm(input, form) {
         });
     }
     else {
-        throw Error('Não foi possível achar o Form ou o Input.');
+        throw Error('Não foi possível achar o Formulário ou o Input.');
     }
 }
