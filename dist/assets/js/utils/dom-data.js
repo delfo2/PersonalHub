@@ -4,7 +4,7 @@ export function applyApiAtHtml(api) {
             <nav class="cabecalho">
                 <button class="cabecalho__botao-voltar" data-botao="voltar"></button>
                 <h1 class="cabecalho__titulo">PersonalHub</h1>
-                <a class="cabecalho__botao-github" href="${api.login}"></a>
+                <a class="cabecalho__botao-github" href="${api.html_url}"></a>
             </nav>
         </header>
         <main class="principal">
