@@ -42,15 +42,17 @@ export function applyApiAtHtml(api) {
     `;
 }
 export const formIndex = `
-            <form method="submit" class="formulario">
-            <fieldset class="formulario__campo">
+    <form method="submit" class="formulario" data-formulario="">
+        <fieldset class="formulario__campo">
             <h2 class="formulario__titulo">Qual conta você quer acessar?</h2>
             <div class="formulario__aria">
                 <input type="text" id="nickname" required
-                    title="Digite um nickname de um usuário do GitHub" placeholder="Exemplo: delfo2">
+                    data-input title="Digite um nickname de um usuário do GitHub" placeholder="Exemplo: delfo2">
                 <label for="nickname">Nome</label>
-                <button type="submit">Procurar</button>
+                <button type="submit" data-botao="enviar">Procurar</button>
             </div>
         </fieldset>
     </form>
+    <script src="assets/js/index.js" type="module"></script>
+    <script src="assets/js/update/dom-updater.js" type="module"></script>
 `;

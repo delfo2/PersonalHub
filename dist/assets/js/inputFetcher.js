@@ -1,16 +1,6 @@
 import { resConverter } from "./utils/promise-helpers.js";
-import { domUpdater } from "./update/dom-injector.js";
-import { applyApiAtHtml } from "./utils/dom-data.js";
-function action(api) {
-    const apiInHtml = applyApiAtHtml(api);
-    domUpdater(apiInHtml);
-}
-function atualizaPagina() {
-    var _a;
-    (_a = document.querySelector('[data-botao="voltar"]')) === null || _a === void 0 ? void 0 : _a.addEventListener('click', () => {
-        window.location.reload();
-    });
-}
+import { EventEmitter } from "./update/event-emiter.js";
+import { btnAtualizaPagina } from "./update/btnF5.js";
 export const inputFetcher = (inputValue) => {
     const nickName = inputValue;
     const urlApi = 'https://api.github.com/users/';
@@ -18,8 +8,8 @@ export const inputFetcher = (inputValue) => {
     fetch(urlApiUser)
         .then(resConverter)
         .then(res => {
-        action(res);
-        atualizaPagina();
+        EventEmitter.pub('resultado', res);
+        btnAtualizaPagina();
     })
         .catch(err => console.log(`não possível se conectar a Api: ${err}`));
 };
