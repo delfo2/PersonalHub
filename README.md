@@ -1,5 +1,6 @@
 # PersonalHub
-## PersonalHub - Exiba o perfil de Usuários do Github
+## PersonalHub - Exiba o perfil de Usuários do Github 
+![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 
 ![imagem do site com um input para inserir o nickname do usuário](https://user-images.githubusercontent.com/105376328/229605188-c2e7386c-3783-49c2-86d4-dedef5855856.png)
 
@@ -19,9 +20,11 @@ https://user-images.githubusercontent.com/105376328/229601355-cbcac75b-1014-4abc
 ## Tecnologias Utilizadas
 Este site foi construído utilizando as seguintes tecnologias:
 
-- HTML5
-- CSS
-- JavaScript
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+<br>(TypeScript foi copilado para funcionar na Web)
 
 ## Contribuição
 Se você encontrar algum bug ou tiver alguma ideia de melhoria para o site, sinta-se livre para abrir uma issue ou pull request no repositório do projeto no Github.
