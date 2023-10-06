@@ -1,11 +1,14 @@
 # PersonalHub
 ## PersonalHub - Exiba o perfil de Usuários do Github 
+Este é um site que permite que você encontre usuários do Github.
+<br>
+O site utiliza as tecnologias: JavaScript, HTML e CSS em seus projetos.
+<br>
+O site consome a API do Github para obter informações sobre o usuário buscado.
+<br>
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 
 ![imagem do site com um input para inserir o nickname do usuário](https://user-images.githubusercontent.com/105376328/229605188-c2e7386c-3783-49c2-86d4-dedef5855856.png)
-
-Este é um site que permite que você encontre usuários do Github que utilizam as tecnologias JavaScript, HTML e CSS em seus projetos. O site consome a API do Github para obter informações sobre o usuário buscado.
-
 ![resultado da busca usando o nick do criador do repositório](https://user-images.githubusercontent.com/105376328/229605314-0a1fa456-5d3b-4f01-978f-be42d7e94981.png)
 
 ## Como Utilizar
